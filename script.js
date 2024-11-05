@@ -38,7 +38,7 @@ const monsters = [
         level: 20,
         health: 300
     }
-]
+];
 const locations = [
     {
         name: "town square",
@@ -88,7 +88,7 @@ const locations = [
     }
 ];
 
-// initialize buttons
+// initialize buttons  
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
@@ -210,7 +210,6 @@ function attack() {
 
 function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
-    console.log(hit);
     return hit > 0 ? hit : 0;
 }
 
